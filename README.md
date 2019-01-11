@@ -8,3 +8,10 @@ Arch linux automate setup with:
 - firewall
 - android support
 - ssd & notebook optimized
+
+## Prerequisites:
+	- a working internet connection
+	
+## How-To:
+	- wget https://bit.ly/2skPLep -O - | tar xz
+	- cd arch-setup-master && chmod +x *.sh && ./Pre-Installation.sh
