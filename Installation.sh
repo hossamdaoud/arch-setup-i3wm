@@ -55,4 +55,4 @@ sed -i '/vmlinuz/s/$/-lts/' /boot/loader/entries/arch-lts.conf
 sed -i '/initramfs/s/linux/linux-lts/' /boot/loader/entries/arch-lts.conf
 
 # Run Post-Installation.sh
-/i-PUSH-arch-setup-i3wm/Post-Installation.sh
+/arch-setup/Post-Installation.sh

@@ -54,11 +54,11 @@ tmpfs /tmp tmpfs size=4G 0 0
 EOF
 
 # Copy the setup folder to the new system
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cp -R $DIR /mnt/i-PUSH-arch-setup-i3wm
+DIR="$(dirname ${BASH_SOURCE[0]})"
+cp -R $DIR /mnt/arch-setup
 
 # Change root into the new system and run Installation.sh
-arch-chroot /mnt /i-PUSH-arch-setup-i3wm/Installation.sh
+arch-chroot /mnt /arch-setup/Installation.sh
 
 # Pipe all output into log file
 } |& tee -a /root/Arch-Installation.log
@@ -67,6 +67,6 @@ mv /root/Arch-Installation.log /mnt/home/$(ls /mnt/home/)/
 # Reboot because systemctl & localectl are not available while chroot
 umount -R /mnt
 cryptsetup luksClose root
-echo "Reboot, login as root and run: /i-PUSH-arch-setup-i3wm/Final-Installation.sh"
+echo "Reboot, login as root and run: /arch-setup/Final-Installation.sh"
 read -p "Press enter to reboot..."
 reboot

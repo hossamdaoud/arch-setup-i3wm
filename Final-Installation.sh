@@ -27,7 +27,7 @@ ufw enable
 localectl set-x11-keymap de pc105 nodeadkeys
 
 # Remove installation files
-rm -R /i-PUSH-arch-setup-i3wm/
+rm -R /arch-setup/
 
 # Enable auto login on tty1
 mkdir -p /etc/systemd/system/getty@tty1.service.d/

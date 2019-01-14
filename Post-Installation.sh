@@ -114,11 +114,11 @@ echo "$userName ALL = NOPASSWD: /usr/bin/shutdown" >> /etc/sudoers
 echo "options rtl8723be fwlps=0" > /etc/modprobe.d/rtl8723be.conf
 
 # Configure synaptics and intel drivers
-cp -R /i-PUSH-arch-setup-i3wm/config/xorg/. /etc/X11/xorg.conf.d/
+cp -R /arch-setup/config/xorg/. /etc/X11/xorg.conf.d/
 
 # Copy all home folder files
-cp -R /i-PUSH-arch-setup-i3wm/config/home/. /home/$userName/
-cp -R /i-PUSH-arch-setup-i3wm/config/home/. /root/
+cp -R /arch-setup/config/home/. /home/$userName/
+cp -R /arch-setup/config/home/. /root/
 
 # Compile the rsync extension
 g++ /home/$userName/.bin/Rsync.cpp -o /home/$userName/.bin/Rsync
