@@ -10,8 +10,11 @@ Arch linux automate setup with:
 - ssd & notebook optimized
 
 # Prerequisites:
+- booting arch installation medium
 - a working internet connection
 	
 # How-To:
     - wget https://bit.ly/2skPLep -O - | tar xz
-    - cd arch-setup-master && chmod +x *.sh && ./Pre-Installation.sh
+    - cd arch-setup-master
+    - chmod +x *.sh
+    - ./Pre-Installation.sh
