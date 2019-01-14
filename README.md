@@ -18,3 +18,10 @@ Arch linux automate setup with:
     - cd arch-setup-master
     - chmod +x *.sh
     - ./Pre-Installation.sh
+
+# Default theme:
+![](images/2018-05-13-00:06:51-screenshot.jpg)
+![](images/2018-05-13-00:10:06-screenshot.jpg)
+
+# Transparent theme:
+![](images/2018-05-13-00:15:16-screenshot.jpg)
