@@ -25,3 +25,6 @@ Arch linux automate setup with:
 
 # Transparent theme:
 ![](images/2018-05-13-00:15:16-screenshot.jpg)
+
+## License
+This Project is released under GNU GPLv3 licence. Copyright (c) iPUSH (Martin Muenning).
